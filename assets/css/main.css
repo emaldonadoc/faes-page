@@ -1592,3 +1592,14 @@
 		body.is-loading #footer {
 			opacity: 0;
 		}
+
+	/*  custom*/
+	 .setBackground{
+		 background: rgba(255,255, 255, 0.1);
+	 }
+
+	 .faeslogo {
+		 height: 400px;
+		 width: auto;
+		 margin: 0 0;
+	 }
