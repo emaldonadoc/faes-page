@@ -672,14 +672,17 @@
 				margin: 2rem 0;
 			}
 
+			.faeslogo {
+				height: 135px !important;
+			}
+
+
 		}
 
 		@media screen and (max-width: 480px) {
-
 			.image.main {
 				margin: 1.5rem 0;
 			}
-
 		}
 
 /* List */
@@ -1599,7 +1602,7 @@
 	 }
 
 	 .faeslogo {
-		 height: 400px;
+		 height: 340px;
 		 width: auto;
 		 margin: 0 0;
 	 }
