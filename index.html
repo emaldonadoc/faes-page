@@ -91,22 +91,23 @@
 								<p>¿Deseas hacer una cotización?</p>
 								<p>No lo dudes más, enviamos un correo a ventas@ferreaceros.com.mx, o solo llena el siguiente formulario para que podamos atender todas tus dudas</p>
 
-								<form method="post" action="#">
+								<form id="faes-contact" action="php/sendEmail.php">
 									<div class="field half first">
 										<label for="name">Nombre</label>
-										<input type="text" name="name" id="name" />
+										<input type="text" name="name" id="name" minlength="4" maxlength="20" required/>
 									</div>
 									<div class="field half">
 										<label for="email">correo</label>
-										<input type="text" name="email" id="email" />
+										<input type="email" name="email" id="email" required/>
 									</div>
 									<div class="field">
 										<label for="message">Mensaje</label>
-										<textarea name="message" id="message" rows="4"></textarea>
+										<textarea name="message" id="message" rows="4" minlength="4" maxlength="400" required></textarea>
 									</div>
 									<ul class="actions">
-										<li><input type="submit" value="Enviar Mensaje" class="special" /></li>
-										<li><input type="reset" value="Cancelar" /></li>
+										<li><input id="faes-sendMail-btn" type="submit" value="Enviar Mensaje" class="special" /></li>
+										<li><input id="faes-cancel-btn" type="reset" value="Cancelar" /></li>
+										<label id="notifications"></label>
 									</ul>
 								</form>
 
@@ -377,6 +378,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+		  <script src="assets/js/faes.js"></script>
 
 	</body>
 </html>

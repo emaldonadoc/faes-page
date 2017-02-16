@@ -1606,3 +1606,15 @@
 		 width: auto;
 		 margin: 0 0;
 	 }
+
+	 .error {
+		 color: red;
+	 }
+
+	 .success {
+		 color: green;
+	 }
+
+	 #notifications {		 
+    font-size: 20px !important;
+	 }
